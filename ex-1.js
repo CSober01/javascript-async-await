@@ -9,8 +9,12 @@ let getJohnProfile = () => {
           age: 20,
           hobbies: ["Coding", "Football"],
         }),
-      1000
+      1000,
     );
   });
 };
 // Start coding here
+
+getJohnProfile().then((getdata) => {
+  console.log(getdata);
+});

@@ -7,8 +7,17 @@ let getJohnProfile = () => {
           errorCode: 500,
           message: "👿 Failed to request data from server",
         }),
-      2000
+      2000,
     );
   });
 };
 // Start coding here
+
+async function asyncconous() {
+  try {
+    console.log(await getJohnProfile());
+  } catch (error) {
+    console.log(error);
+  }
+}
+asyncconous();
