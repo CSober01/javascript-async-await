@@ -12,3 +12,12 @@ let getJohnProfile = () => {
   });
 };
 // Start coding here
+async function showData(){
+  try{
+    const johnProfile =await getJohnProfile(); //johnProfile= awaitค่าที่ได้จาก getJohnProfile()
+    console.log(johnProfile);
+  } catch (error){
+    console.log(error);
+  };
+}
+showData ()
