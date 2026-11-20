@@ -8,8 +8,11 @@ let getJohnProfile = () => {
           age: 20,
           hobbies: ["Coding", "Football"],
         }),
-      1000
+      1000,
     );
   });
 };
 // Start coding here
+const asyncconous = async () => console.log(await getJohnProfile());
+
+asyncconous();

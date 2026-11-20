@@ -8,7 +8,7 @@ let getJohnProfile = () => {
           age: 20,
           hobbies: ["Coding", "Football"],
         }),
-      1000
+      1000,
     );
   });
 };
@@ -27,9 +27,13 @@ let getJohnOrders = () => {
             items: ["orange", "itim"],
           },
         ]),
-      1500
+      1500,
     );
   });
 };
 
 // Start coding here
+getJohnProfile()
+  .then((getdata) => console.log(getdata))
+  .then(() => getJohnOrders())
+  .then((getOrders) => console.log(getOrders));
